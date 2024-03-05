@@ -1,0 +1,18 @@
+<h1><%= @task.title %></h1>
+
+<p class="alert alert-secondary"><%= @task.details %></p>
+<div class="border-bottom my-3 p-3">
+  <% if @task.completed %>
+    <input type="checkbox" checked> <span>This task is completed</span>
+  <% else %>
+    <input type="checkbox"> <span>This task is not completed yet</span>
+  <% end %>
+</div>
+<div class="d-flex justify-content-between">
+  <%= link_to tasks_path, class:"btn btn-primary" do %>
+    <i class="fa-solid fa-rotate-left"></i> Back to list
+  <% end %>
+  <%= link_to edit_task_path, class:"btn btn-outline-primary" do %>
+    <i class="fa-solid fa-pen-to-square"></i> Edit task
+  <% end %>
+</div>

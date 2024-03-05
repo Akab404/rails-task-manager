@@ -13,3 +13,10 @@
  *= require_tree .
  *= require_self
  */
+  #delete-ico{display: none;}
+  #list-item:hover #delete-ico{display: block;}
+  #create_form form{display: flex;flex-direction: column;}
+  #create_form form >*{margin:20px 0 5px 0;}
+  #create_form form input, #create_form form textarea{margin-top:5px;}
+  #checkbox-form label, #checkbox-form input{margin:0 !important}
+    #checkbox-form label{margin-left:20px !important;}
